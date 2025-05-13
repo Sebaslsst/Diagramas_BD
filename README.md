@@ -25,6 +25,7 @@ Ing. René Guamán.
 # ![Problema5 drawio](https://github.com/user-attachments/assets/5ff5351e-6d86-4d52-b8b7-7db014db0233)
 - Taller 1:
 # ![Taller1 drawio](https://github.com/user-attachments/assets/37f3558c-9e2c-4f7e-a997-276d6b30f9d0)
+- Código MYSQL: https://github.com/Sebaslsst/Diagramas_BD/blob/main/Taller%201%20(MYSQL) 
 
 
 

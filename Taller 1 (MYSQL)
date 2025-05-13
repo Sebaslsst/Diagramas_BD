@@ -1,0 +1,42 @@
+create database disquera;
+use disquera;
+
+create table cancion( 
+    idCancion int auto_increment primary key, 
+    titulo varchar (30) not null);
+
+create table generoMusica(
+    idGenero int auto_increment primary key);
+
+create table cantante(
+    idCantante int auto_increment primary key,
+    nombre varchar (50),
+    pais set ("Ecuador","Colombia","España"));
+
+create table disco(
+    idDisco int auto_increment primary key,
+    precio double not null,
+    titulo varchar (50),
+    cantante (50) not null,
+    idGenero int not null,
+    idCantante int not null,
+    foreign key (idGenero) references generoMusica(idGenero),
+    foreign key (idCantante) references cantante(idCantante));
+
+create table disco(
+    idDisco int auto_increment primary key,
+    precio double,
+    titulo varchar (50),
+    cantante varchar(50),
+    idGenero int,
+    idCantante int,
+    foreign key (idGenero) references generoMusica(idGenero),
+    foreign key (idCantante) references cantante(idCantante));
+
+create table discoCancion(
+    idDiscoCancion int auto_increment primary key,
+    idDisco int,
+    idCancion int,
+    foreign key (idDisco) references disco(idGenero),
+    foreign key (idCancion) references cancion(idCancion));
+
